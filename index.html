@@ -14,40 +14,41 @@
         <header>
             <h1>Task List</h1>
             <form id="new-task-form">
-                 <input type="text" 
-                 id="new-task-input"
-                 placeholder="What task do you want to list?"/>
-                 <input
-                 type="submit"
-                 id="new-task-submit"
-                 value="Add task" />
+                <input 
+                    type="text" 
+                    name="new-task-input" 
+                    id="new-task-input" 
+                    placeholder="What task do you want to list?" />
+                <input 
+                    type="submit"
+                    id="new-task-submit" 
+                    value="Add task" />
             </form>
         </header>
-
         <main>
-
             <section class="task-list">
                 <h2>Tasks</h2>
-
+    
                 <div id="tasks">
-
+    
                     <div class="task">
-                        <div class="cont">
+                        <div class="content">
                             <input 
-                            type="text"
-                            class="text"
-                            value="My tasks"
-                            readonly
-                            />
+                                type="text" 
+                                class="text" 
+                                value="My tasks"
+                                readonly>
                         </div>
                         <div class="actions">
                             <button class="edit">Edit task</button>
                             <button class="delete">Delete task</button>
                         </div>
                     </div>
+    
                 </div>
             </section>
         </main>
-
+    
+        <script src="main.js"></script>
     </body>
-</html>
+    </html>

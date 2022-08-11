@@ -18,6 +18,8 @@
         <form id="new-task-form">
             <input type="text" name="new-task-input" id="new-task-input" placeholder="What task do you want to list?" />
             <input type="submit" id="new-task-submit" value="Add task" />
+            <input type="text" name="new-task-date" id="new-task-date" placeholder="Date due for task" />
+            <input type="submit" id="new-task-date-submit" value="Add date" />
         </form>
     </header>
     <main>
@@ -32,6 +34,20 @@
 							type="text" 
 							class="text" 
 							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+                <!-- <div class="date">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new date"
 							readonly>
 					</div>
 					<div class="actions">

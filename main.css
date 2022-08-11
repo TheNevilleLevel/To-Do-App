@@ -63,6 +63,20 @@ button {
     color: var(--gray);
 }
 
+#new-task-date {
+    flex: 1 1 0%;
+    background-color: var(--blacker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+#new-task-date::placeholder {
+    color: var(--gray);
+}
+
 #new-task-submit {
     color: var(--pink);
     font-size: 1.25rem;
@@ -79,6 +93,25 @@ button {
 }
 
 #new-task-submit:active {
+    opacity: 0.4;
+}
+
+#new-task-date-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-date-submit:hover {
+    opacity: 0.9;
+}
+
+#new-task-date-submit:active {
     opacity: 0.4;
 }
 
@@ -108,6 +141,7 @@ main {
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+
 
 .task .content {
     flex: 1 1 0%;
@@ -154,5 +188,63 @@ main {
 }
 
 .task .actions .delete {
+    color: rgb(211, 29, 29);
+}
+
+#tasks .date {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blackest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.date .content {
+    flex: 1 1 0%;
+}
+
+.date .content .text {
+    color: var(--white);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.date .content .text:not(:read-only) {
+    color: var(--pink);
+}
+
+.date .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.date .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.date .actions button:hover {
+    opacity: 0.9;
+}
+
+.date .actions button:active {
+    opacity: 0.4;
+}
+
+.date .actions .edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.date .actions .delete {
     color: rgb(211, 29, 29);
 }
